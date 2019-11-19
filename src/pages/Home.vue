@@ -1,6 +1,14 @@
 <template>
   <div class="page-container">
-    <div class="header"></div>
+    <div class="header">
+      <div class="author"></div>
+      <div class="github">
+        <Icon type="logo-github"/>github
+      </div>
+      <div class="site">
+        <Icon type="ios-link" />个人网站
+      </div>
+    </div>
     <div class="page-content-container">
       <div class="page-menu">
         <div class="title">目录</div>
@@ -53,6 +61,7 @@ export default {
     height 64px
     background rgba(0, 135, 252, 1)
     flex-shrink 0
+    color #fff
   .page-content-container
     flex auto
     margin-top 20px

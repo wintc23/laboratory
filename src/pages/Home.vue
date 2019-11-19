@@ -82,6 +82,7 @@ export default {
     flex auto
     margin-top 1 0px
     border-top 1px solid #ccc
+    overflow hidden
     .page-menu
       height 100%
       float left

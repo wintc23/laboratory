@@ -4,10 +4,10 @@
       <div class="header">
         <div class="keyword">
           <div class="label">搜索</div>
-          <Input class="input" v-model="keyword" placeholder="输入关键字搜索" />
+          <Input class="input" v-model="keyword" placeholder="输入关键字搜索" @on-enter="checkKeydown"/>
         </div>
         <div class="menu">
-          <div class="current">{{ currentIdx }} / {{ matchCount }}</div>
+          <div class="current">{{ matchCount ? currentIdx + 1 : currentIdx }} / {{ matchCount }}</div>
           <Button type="primary" size="small" class="button" @click.stop="searchLast">上一个</Button>
           <Button type="primary" size="small" class="button" @click.stop="searchNext">下一个</Button>
         </div>
@@ -71,6 +71,13 @@ export default {
     },
     currentChange (idx) {
       this.currentIdx = idx
+    },
+    checkKeydown (event) {
+      if (event.shiftKey) {
+        this.searchLast()
+      } else {
+        this.searchNext()
+      }
     }
   }
 }

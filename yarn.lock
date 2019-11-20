@@ -7027,9 +7027,10 @@ vue-router@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-3.1.3.tgz#e6b14fabc0c0ee9fda0e2cbbda74b350e28e412b"
 
-vue-search-highlight@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/vue-search-highlight/-/vue-search-highlight-1.0.1.tgz#9efd69ba7bcf10b0d3a9173b4ad4fcf31e150333"
+vue-search-highlight@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/vue-search-highlight/-/vue-search-highlight-1.0.2.tgz#55af7e40f3e4748c3592d175edeb71207c7146dc"
+  integrity sha512-HQ28MeminkxGCUtwD6s6k8evL8wXT8eUjzgIE9hal6xhodPtRbk0sspJeRj6o/Mi03Nwv+JOzDLfT3Vpi0Kkwg==
   dependencies:
     core-js "^2.6.5"
     vue "^2.6.10"

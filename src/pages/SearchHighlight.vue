@@ -1,13 +1,17 @@
 <template>
-  <div>
-    <div class="search-highlight">
+  <div class="page-search-highlight">
+    <div class="search-highlight-container">
       <div class="header">
         <div class="keyword">
           <div class="label">搜索</div>
-          <Input class="input" v-model="keyword" placeholder="输入关键字搜索" />
+          <Input
+            @on-enter="checkKeydown"
+            class="input"
+            v-model="keyword"
+            placeholder="输入关键字搜索" />
         </div>
         <div class="menu">
-          <div class="current">{{ currentIdx }} / {{ matchCount }}</div>
+          <div class="current">{{ matchCount ? currentIdx + 1 : 0 }} / {{ matchCount }}</div>
           <Button type="primary" size="small" class="button" @click.stop="searchLast">上一个</Button>
           <Button type="primary" size="small" class="button" @click.stop="searchNext">下一个</Button>
         </div>
@@ -71,16 +75,30 @@ export default {
     },
     currentChange (idx) {
       this.currentIdx = idx
+    },
+    checkKeydown (event) {
+      if (event.shiftKey) {
+        this.searchLast()
+      } else {
+        this.searchNext()
+      }
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.search-highlight
-  margin 20px
+.page-search-highlight
+  display flex
+.search-highlight-container
+  flex auto
+  overflow hidden
+  display flex
+  flex-direction column
+  padding 20px
   text-align center
   .header
+    flex-shrink 0
     .keyword, .menu
       max-width 20rem
       display flex
@@ -98,6 +116,8 @@ export default {
       .button
         margin 0 2px
   .content-container
+    flex auto
+    overflow auto
     white-space pre-line
     font-size 20px
 </style>

@@ -93,7 +93,6 @@ export default {
       display flex
       flex-direction column
       border-right 1px solid #ccc
-      display none
       .title
         width 15rem
         max-width 80vw
@@ -118,6 +117,6 @@ export default {
             background #eee
     .page-content
       height 100%
+      overflow hidden
       flex auto
-      overflow auto
 </style>

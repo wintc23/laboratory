@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tree-page">
     <div class="tree">
       <tree :treeData="treeData" ref="tree">
         <template v-slot="{ parentData, data, level, nextShow }">
@@ -97,8 +97,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.tree-page
+  display flex
 .tree
-  margin 20px
+  flex auto
+  overflow auto
+  padding 20px
   .node-slot
     display flex
     align-items center

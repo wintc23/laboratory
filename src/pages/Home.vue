@@ -35,6 +35,10 @@ export default {
         {
           title: '树组件',
           name: 'Tree',
+        },
+        {
+          title: '搜索高亮',
+          name: 'SearchHighlight'
         }
       ]
     }

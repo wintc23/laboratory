@@ -12,7 +12,13 @@ export default new VueRouter({
           path: 'tree',
           name: 'Tree',
           component: () => import('@/pages/Tree')
+        },
+        {
+          path: 'search-highlight',
+          name: 'SearchHighlight',
+          component: () => import('@/pages/SearchHighlight')
         }
+
       ]
     }
   ]

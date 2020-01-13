@@ -1,14 +1,11 @@
 <template>
-  <div>
+  <div class="tree-page">
     <div class="tree">
       <tree :treeData="treeData" ref="tree">
         <template v-slot="{ parentData, data, level, nextShow }">
           <div class="node-slot">
             <div class="expand">
-              <div
-                class="expand-btn"
-                @click.stop="clickExpand(data, nextShow)"
-                v-if="data.children && data.children.length">
+              <div class="expand-btn" @click.stop="clickExpand(data, nextShow)" v-if="data.children && data.children.length">
                 <Icon type="md-remove" v-if="nextShow"/>
                 <Icon type="md-add" v-else/>
               </div>
@@ -100,8 +97,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.tree-page
+  display flex
 .tree
-  margin 20px
+  flex auto
+  overflow auto
+  padding 20px
   .node-slot
     display flex
     align-items center
@@ -129,6 +130,8 @@ export default {
       padding 0 4px
       &:hover
         background rgba(64, 158, 255, .2)
+      .node-title
+        vertical-align middle
       .node-menu-list
         font-size 14px
         vertical-align middle

@@ -1,13 +1,14 @@
 <template>
   <div class="page-container">
     <div class="header">
-      <div class="author"></div>
-      <div class="github">
+      <div class="author">木马tc</div>
+      <div class="placeholder"></div>
+      <a class="github" href="https://github.com/Lushenggang" target="_blank">
         <Icon type="logo-github"/>github
-      </div>
-      <div class="site">
+      </a>
+      <a class="site" href="http://wintc.top/" target="_blank">
         <Icon type="ios-link" />个人网站
-      </div>
+      </a>
     </div>
     <div class="page-content-container">
       <div class="page-menu">
@@ -69,17 +70,33 @@ export default {
     height 64px
     background rgba(0, 135, 252, 1)
     flex-shrink 0
-    color #fff
+    display flex
+    align-items center
+    padding 0 20px
+    font-size 18px
+    .placeholder
+      flex auto
+    .author
+      color #fff
+      font-size 20px
+    .github, .site
+      margin 0 5px
+      background rgba(255, 255, 255, .7)
+      padding 5px 10px
+      border-radius 4px
+      color #333
+      cursor pointer
   .page-content-container
     flex auto
-    margin-top 20px
-    border-top 1px solid #eee
+    margin-top 1 0px
+    border-top 1px solid #ccc
+    overflow hidden
     .page-menu
       height 100%
       float left
       display flex
       flex-direction column
-      border-right 1px solid #eee
+      border-right 1px solid #ccc
       .title
         width 15rem
         max-width 80vw
@@ -88,8 +105,7 @@ export default {
         line-height 2.5
         color rgb(64, 158, 255)
         font-weight bold
-        background #eee
-        border-bottom 1px solid #eee
+        border-bottom 1px solid #ccc
       .menu-list
         text-align left
         flex auto
@@ -98,13 +114,13 @@ export default {
         .menu
           line-height 2
           font-size 18px
-          padding 0 10px
+          padding 5px 10px
           user-select none
           cursor pointer
           &:hover
             background #eee
     .page-content
       height 100%
+      overflow hidden
       flex auto
-      overflow auto
 </style>

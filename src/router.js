@@ -17,8 +17,12 @@ export default new VueRouter({
           path: 'search-highlight',
           name: 'SearchHighlight',
           component: () => import('@/pages/SearchHighlight')
+        },
+        {
+          path: 'watermark',
+          name: 'Watermark',
+          component: () => import('@/pages/Watermark')
         }
-
       ]
     }
   ]

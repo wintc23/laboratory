@@ -46,6 +46,10 @@ export default {
         {
           title: '搜索高亮',
           name: 'SearchHighlight'
+        },
+        {
+          title: '图片添加水印',
+          name: 'Watermark'
         }
       ],
       show: true

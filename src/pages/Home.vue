@@ -4,14 +4,20 @@
       <div class="author">木马tc</div>
       <div class="placeholder"></div>
       <a class="github" href="https://github.com/Lushenggang" target="_blank">
-        <Icon type="logo-github"/>github
+        <Icon type="logo-github"/>
+        <span>github</span>
       </a>
       <a class="site" href="http://wintc.top/" target="_blank">
-        <Icon type="ios-link" />个人网站
+        <Icon type="ios-link" />
+        <span>个人网站</span>
       </a>
     </div>
     <div class="page-content-container">
-      <div class="page-menu">
+      <div :class="['hover-btn', show ? 'show' : 'hide']" @click.stop="clickBtn()">
+        <Icon type="ios-arrow-dropright-circle" />
+      </div>
+      <div
+        :class="['page-menu', show ? 'show' : 'hide']">
         <div class="title">目录</div>
         <div class="menu-list">
           <div
@@ -41,13 +47,17 @@ export default {
           title: '搜索高亮',
           name: 'SearchHighlight'
         }
-      ]
+      ],
+      show: true
     }
   },
   methods: {
     clickMenu (menu) {
       if (menu.name === this.$route.name) return
       this.$router.push({ name: menu.name })
+    },
+    clickBtn () {
+      this.show = !this.show
     }
   }
 }
@@ -119,4 +129,37 @@ export default {
       height 100%
       overflow hidden
       flex auto
+@media screen and (min-width: 480px)
+  .page-content-container
+    .hover-btn
+      display none
+
+@media screen and (max-width: 480px)
+  .header
+    a
+      span
+        display none
+  .page-content-container
+    position relative
+    .hover-btn
+      position absolute
+      top -3px
+      left -3px
+      color rgba(0, 0, 0, .6)
+      font-size 40px
+      line-height 1
+      z-index 3
+      transition all .3s ease-out
+      &.show
+        transform rotate(180deg)
+    .page-menu
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      z-index 2
+      background #fff
+      transition all .3s ease-out
+      &.hide
+        transform translateX(-100%)
 </style>

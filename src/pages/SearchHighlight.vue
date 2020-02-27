@@ -63,6 +63,14 @@ export default {
       不知乘月几人归，落月摇情满江树。`,
     }
   },
+
+  mounted () {
+    for (let key in this.$refs.search) {
+      if (!(key in this) && typeof this.$refs.search[key] === 'function') {
+        console.log(key)
+      }
+    }
+  },
   methods: {
     searchNext () {
       this.$refs.search.searchNext()

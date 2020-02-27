@@ -21,7 +21,10 @@
         <div class="title">目录</div>
         <div class="menu-list">
           <div
-            class="menu"
+            :class="{
+              menu: true,
+              current: menu.name === routeName
+            }"
             v-for="(menu, idx) of menuList"
             @click.stop="clickMenu(menu)"
             :key="idx">
@@ -53,6 +56,11 @@ export default {
         }
       ],
       show: true
+    }
+  },
+  computed: {
+    routeName () {
+      return this.$route.name
     }
   },
   methods: {
@@ -129,6 +137,9 @@ export default {
           cursor pointer
           &:hover
             background #eee
+          &.current
+            color rgba(49, 118, 255, 1)
+            background rgba(64, 158, 255, .1)
     .page-content
       height 100%
       overflow hidden

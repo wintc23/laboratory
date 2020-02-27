@@ -5,8 +5,9 @@
         <Input placeholder="水印内容" v-model="text"/>
         <Button class="btn" type="primary" size="small" @click.stop="chooseImage">选择图片</Button>
       </div>
+      <div class="notice">请编辑水印内容并选择图片查看预览</div>
       <div class="preview" ref="preview">
-        <div class="first" ref="first"></div>
+        <div ref="first"></div>
       </div>
     </div>
   </div>
@@ -74,19 +75,26 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.watermark-container
-  max-width 100vw
-  width 400px
-  margin 60px auto
-  .action
+.watermark
+  display flex
+  .watermark-container
+    flex auto
+    max-width 100vw
+    width 400px
+    padding 10px
     display flex
-    align-items center
-    .btn
-      margin-left 10px
-  .preview
-    margin-top 20px
-    min-height 100px
-    background #f9f9f9
-    >>> img
-      max-width 100%
+    flex-direction column
+    .action
+      display flex
+      align-items center
+      .btn
+        margin-left 10px
+    .notice
+      line-height 2.5
+      color #666
+    .preview
+      flex auto
+      overflow auto
+      >>> img
+        max-width 100%
 </style>

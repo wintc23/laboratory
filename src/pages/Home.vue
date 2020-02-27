@@ -106,9 +106,10 @@ export default {
       cursor pointer
   .page-content-container
     flex auto
+    overflow hidden
     margin-top 1 0px
     border-top 1px solid #ccc
-    overflow hidden
+    display flex
     .page-menu
       height 100%
       float left
@@ -142,8 +143,8 @@ export default {
             background rgba(64, 158, 255, .1)
     .page-content
       height 100%
-      overflow hidden
       flex auto
+      overflow hidden
 @media screen and (min-width: 480px)
   .page-content-container
     .hover-btn

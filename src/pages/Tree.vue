@@ -103,6 +103,7 @@ export default {
   flex auto
   overflow auto
   padding 20px
+  border 1px solid red
   .node-slot
     display flex
     align-items center

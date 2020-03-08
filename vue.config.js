@@ -9,8 +9,7 @@ module.exports = {
         test: /\.(js|css)?$/i,
         asset: "[path].gz[query]",
         algorithm: 'gzip',
-        threshold: 10240,
-        minRatio: 0.5,
+        minRatio: 0.8,
         deleteOriginalAssets: true
       })
     ]

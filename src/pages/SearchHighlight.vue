@@ -11,7 +11,7 @@
             placeholder="输入关键字搜索" />
         </div>
         <div class="menu">
-          <div class="current">{{ matchCount ? currentIdx + 1 : 0 }} / {{ matchCount }}</div>
+          <div class="current">{{ matchCount ? currentIdx : 0 }} / {{ matchCount }}</div>
           <Button type="primary" size="small" class="button" @click.stop="searchLast">上一个</Button>
           <Button type="primary" size="small" class="button" @click.stop="searchNext">下一个</Button>
         </div>
@@ -39,7 +39,7 @@ export default {
     return {
       currentIdx: 0,
       matchCount: 0,
-      keyword: '月',
+      keyword: '',
       content: `
             春江花月夜
                 [唐] 张若虚

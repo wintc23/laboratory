@@ -22,6 +22,11 @@ export default new VueRouter({
           path: 'watermark',
           name: 'Watermark',
           component: () => import('@/pages/Watermark')
+        },
+        {
+          path: 'circle-progress',
+          name: 'CircleProgress',
+          component: () => import('@/pages/CircleProgress')
         }
       ]
     }

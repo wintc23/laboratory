@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <div class="header">
-      <div class="author">木马tc</div>
+      <div class="author">木马Muma</div>
       <div class="placeholder"></div>
       <a class="github" href="https://github.com/Lushenggang" target="_blank">
         <Icon type="logo-github"/>
@@ -53,6 +53,10 @@ export default {
         {
           title: '图片添加水印',
           name: 'Watermark'
+        },
+        {
+          title: '圆环进度环',
+          name: 'CircleProgress'
         }
       ],
       show: true

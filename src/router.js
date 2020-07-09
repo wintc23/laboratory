@@ -27,6 +27,11 @@ export default new VueRouter({
           path: 'circle-progress',
           name: 'CircleProgress',
           component: () => import('@/pages/CircleProgress')
+        },
+        {
+          path: 'outline',
+          name: 'Outline',
+          component: () => import('@/pages/Outline')
         }
       ]
     }

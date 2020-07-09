@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <div class="header">
-      <div class="author">木马Muma</div>
+      <div class="author">Muma Demo</div>
       <div class="placeholder"></div>
       <a class="github" href="https://github.com/Lushenggang" target="_blank">
         <Icon type="logo-github"/>
@@ -43,8 +43,8 @@ export default {
     return {
       menuList: [
         {
-          title: '树组件',
-          name: 'Tree',
+          title: '文章目录生成',
+          name: 'Outline'
         },
         {
           title: '搜索高亮',
@@ -57,6 +57,10 @@ export default {
         {
           title: '圆环进度环',
           name: 'CircleProgress'
+        },
+        {
+          title: '树组件',
+          name: 'Tree',
         }
       ],
       show: true

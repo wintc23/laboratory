@@ -3,7 +3,7 @@
     <div class="header">
       <div class="author">Muma Demo</div>
       <div class="placeholder"></div>
-      <a class="github" href="https://github.com/Lushenggang" target="_blank">
+      <a class="github" href="https://github.com/Lushenggang/laboratory" target="_blank">
         <Icon type="logo-github"/>
         <span>github</span>
       </a>

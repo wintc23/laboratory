@@ -12,11 +12,11 @@
             v-model="innerHtml"/>
         </div>
         <div class="config-item">
-          <div class="title">输入各层级标题的选择器，用英文分号分隔</div>
+          <div class="title">输入各层级标题的选择器，用英文分号分隔，回车生效</div>
           <Input v-model="selectorString" />
         </div>
         <div class="config-item">
-          <div class="title">排除选择器（不生成目录的选择器）</div>
+          <div class="title">排除选择器（不生成目录的选择器），回车生效</div>
           <Input v-model="exceptSelector" />
         </div>
       </div>

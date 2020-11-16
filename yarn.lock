@@ -2391,6 +2391,11 @@ core-js@^2.6.5:
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw=
 
+core-js@^3.6.5:
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.7.0.tgz#b0a761a02488577afbf97179e4681bf49568520f"
+  integrity sha512-NwS7fI5M5B85EwpWuIwJN4i/fbisQUwLwiSNUWeXlkAZ0sbBjLEvLvFLf1uzAUV66PcEPt4xCGCmOZSxVf3xzA==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -3013,7 +3018,7 @@ electron-to-chromium@^1.3.413:
   resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.465.tgz?cache=0&sync_timestamp=1591645196932&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.465.tgz#d692e5c383317570c2bd82092a24a0308c6ccf29"
   integrity sha1-1pLlw4MxdXDCvYIJKiSgMIxszyk=
 
-element-resize-detector@^1.2.0:
+element-resize-detector@^1.2.0, element-resize-detector@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npm.taobao.org/element-resize-detector/download/element-resize-detector-1.2.1.tgz#b0305194447a4863155e58f13323a0aef30851d1"
   integrity sha1-sDBRlER6SGMVXljxMyOgrvMIUdE=
@@ -8208,6 +8213,15 @@ vue-outline@^4.0.1:
   dependencies:
     vue "^2.5.17"
 
+vue-overflow-ellipsis@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.npmjs.org/vue-overflow-ellipsis/-/vue-overflow-ellipsis-0.9.1.tgz#1088b9e655255d7fa7cb3ef974255d1458eced66"
+  integrity sha512-b8LV65AAAjvVqny1XVgTbASEVfFGfO3K0yGQ8pp6gnod8ijfc0cWppMV1JZc0u7ZxKTMztIAp+DmAglcI3Uung==
+  dependencies:
+    core-js "^3.6.5"
+    element-resize-detector "^1.2.1"
+    vue "^2.6.11"
+
 vue-router@^3.1.3:
   version "3.3.2"
   resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.3.2.tgz#0099de402edb2fe92f9711053ab5a2156f239cad"
@@ -8246,6 +8260,11 @@ vue@^2.5.17, vue@^2.6.10:
   version "2.6.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
+
+vue@^2.6.11:
+  version "2.6.12"
+  resolved "https://registry.npmjs.org/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
+  integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
 
 watchpack-chokidar2@^2.0.0:
   version "2.0.0"

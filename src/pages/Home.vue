@@ -61,6 +61,10 @@ export default {
         {
           title: '树组件',
           name: 'Tree',
+        },
+        {
+          title: '多行溢出折叠',
+          name: 'Ellipsis'
         }
       ],
       show: true

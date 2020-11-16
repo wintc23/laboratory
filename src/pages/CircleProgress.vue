@@ -25,13 +25,11 @@ export default {
     progress: {
       immediate: true,
       handler () {
-        console.log(this.progress, this.progress < 0, '~~~~12')
         if (this.progress > 100 || this.progress < 0) {
           this.$nextTick(() => {
             this.progress = 0
           })
         }
-        console.log(this.progress, this.progress < 0, '~~~~~34')
       }
     }
   }

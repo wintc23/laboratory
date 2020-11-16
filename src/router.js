@@ -32,6 +32,11 @@ export default new VueRouter({
           path: 'outline',
           name: 'Outline',
           component: () => import('@/pages/Outline')
+        },
+        {
+          path: 'ellipsis',
+          name: 'Ellipsis',
+          component: () => import('@/pages/Ellipsis')
         }
       ]
     }

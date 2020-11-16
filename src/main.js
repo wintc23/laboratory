@@ -8,7 +8,6 @@ Vue.use(ViewUI)
 Vue.config.productionTip = false
 console.log('main')
 
-
 new Vue({
   render: h => h(App),
   router

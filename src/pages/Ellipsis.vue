@@ -4,10 +4,8 @@
       <div class="ellipsis-notice">
         组件是自适应宽度的，拖动右下角改变宽度查看效果。
       </div>
-      <div class="container">
-        <div class="ellipsis-component">
-          <ellipsis class="ellipsis" :content="content" :rows="rows" :btnText="btnText" :ellipsisText="ellipsisText"></ellipsis>
-        </div>
+      <div class="ellipsis-component">
+        <ellipsis class="ellipsis" :content="content" :rows="rows" :btnText="btnText" :ellipsisText="ellipsisText"></ellipsis>
       </div>
       <div class="ellipsis-github">
         github[求star]：<a :href="link" target="_blank">{{ link }}</a>
@@ -54,14 +52,6 @@ export default {
   &::after
     flex-grow 4
   .ellipsis-container
-    .container
-      --w 132px
-      display flex
-      justify-content center
-      align-items center
-      width calc(var(--w) * 3)
-      height calc(var(--w) * 2)
-      border 1px solid red
     .ellipsis-component
       width 321px
       resize horizontal

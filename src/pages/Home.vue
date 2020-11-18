@@ -47,6 +47,10 @@ export default {
           name: 'Outline'
         },
         {
+          title: '多行溢出折叠',
+          name: 'Ellipsis'
+        },
+        {
           title: '搜索高亮',
           name: 'SearchHighlight'
         },
@@ -61,10 +65,6 @@ export default {
         {
           title: '树组件',
           name: 'Tree',
-        },
-        {
-          title: '多行溢出折叠',
-          name: 'Ellipsis'
         }
       ],
       show: true

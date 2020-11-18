@@ -39,7 +39,7 @@ export default {
     return {
       currentIdx: 0,
       matchCount: 0,
-      keyword: '',
+      keyword: '月',
       content: `
             春江花月夜
                 [唐] 张若虚

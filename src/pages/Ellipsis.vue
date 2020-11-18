@@ -61,7 +61,6 @@ export default {
 .page-ellipsis
   display flex
   flex-direction column
-  align-items center
   text-align center
   justify-content center
   &::before, &::after
@@ -71,9 +70,12 @@ export default {
   &::after
     flex-grow 4
   .ellipsis-container
+    flex auto
+    overflow auto
     .ellipsis-component
+      margin 0 auto
       width 560px
-      max-width 90vw
+      max-width 90%
       resize horizontal
       border 1px solid rgba(64, 158, 255, 1)
       padding 10px 20px

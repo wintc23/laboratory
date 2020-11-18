@@ -73,6 +73,7 @@ export default {
   .ellipsis-container
     .ellipsis-component
       width 560px
+      max-width 90vw
       resize horizontal
       border 1px solid rgba(64, 158, 255, 1)
       padding 10px 20px

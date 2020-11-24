@@ -25,6 +25,9 @@
         :keyword="keyword"
         :content="content">
       </search-highlight>
+      <div class="github">
+        github[求star]：<a :href="link" target="_blank">{{ link }}</a>
+      </div>
     </div>
   </div>
 </template>
@@ -40,7 +43,8 @@ export default {
     return {
       currentIdx: 0,
       matchCount: 0,
-      keyword: '江畔何人初见月',
+      link: 'https://github.com/Lushenggang/vue-search-highlight',
+      keyword: '江畔何人初见月？',
       content: `
             春江花<b>月</b>夜
                 [唐] 张若虚

@@ -51,6 +51,7 @@ export default {
   },
   methods: {
     hideMore (ellipsis) {
+      console.log('hidemore')
       this.ellipsis = ellipsis
     }
   }
